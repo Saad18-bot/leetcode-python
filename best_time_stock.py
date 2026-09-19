@@ -9,4 +9,6 @@ for i in range(len(prices)):
         if ( diff > max_profit ):
             max_profit = diff
 
+
+print(i , j)
 print("max_profit: ", max_profit)
