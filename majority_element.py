@@ -10,5 +10,5 @@ for i in range(len(nums)):
     if c > max_count:
         max_count = c
         majority = nums[i]
-
+    
 print("The number that has occurred majority of times is:", majority)
