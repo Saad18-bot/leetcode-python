@@ -1,21 +1,22 @@
 s = "abc"
 t = "ahbgdc"
-found = False
-d = ""
+
+found = True
+start = 0
+
 for s1 in s:
 
-    for t1 in t:
+    match = False
 
-        if s1 == t1 :
+    for i in range(start, len(t)):
 
-            d.append(s1)
-            found = True
+        if s1 == t[i]:
+            match = True
+            start = i + 1
             break
 
-    if found:
-        print(True)
-        print(d)
+    if not match:
+        found = False
         break
 
-if not found:
-    print("Is Not A Subsequence")
+print(found)
